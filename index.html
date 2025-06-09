@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Main Header -->
+    <header class="main-header">
+      <!-- Logo -->
+      <div class="main-logo"></div>
+      <!-- Navigation -->
+      <nav>
+        <a class="nav-home" href="#home">Home</a>
+        <a href="#our-package">Our Package</a>
+        <a class="nav-call-us" href="#call-us">Call Us</a>
+      </nav>
+    </header>
+    <hr class="grs-atas" />
+
+    <!-- Main Content -->
+    <main>
+      <!-- Home Content -->
+      <section id="home">
+        <header>
+          <h1>Your Favourite Furtniture Store is Here</h1>
+        </header>
+
+        <h4>Your Happiness is our Happiness</h4>
+
+        <!-- Banner & Form Content -->
+        <div class="banner-form">
+          <div class="banner-container">
+            <div class="slide">
+              <img src="img/kursimakanset1.jpg" alt="Kursi Makan" />
+              <h5>Kursi</h5>
+              <p>Terbuat dari kayu jati yang berkualitas, cocok untuk cafe atau tempat makan</p>
+            </div>
+
+            <div class="slide">
+              <img src="img/meja.jpg" alt="Meja" />
+              <h5>Meja</h5>
+              <p>Meja ini terbuat dari kayu jati yang awet dan tahan dari serangan rayap</p>
+            </div>
+
+            <div class="slide">
+              <img src="img/lemaripakaian.jpg" alt="Lemari Pakaian" />
+              <h5>Lemari </h5>
+              <p>Terbuat dari kayu jati yang tahan lama dan desain yang minimalis</p>
+            </div>
+
+            <div class="slide">
+              <img src="img/sofaminimalis.jpg" alt="Sofa Minimalis" />
+              <h5>Sofa</h5>
+              <p>Dengan busa yang empuk sofa ini akan nyaman dipakai untuk beristirahat</p>
+            </div>
+
+            <div class="slide">
+              <img src="img/tempattidurkayu.jpg" alt="Tempat Tidur Kayu" />
+              <h5>Tempat Tidur</h5>
+              <p>Terbuat dari kayu jati membuat tempat tidur ini kuat dari serangan rayap</p>
+            </div>
+
+            <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-angles-left"></i></button>
+            <button class="next" onclick="nextSlide()"><i class="fa-solid fa-angles-right"></i></button>
+          </div>
+
+          <form id="registrationForm" class="form-main">
+            <h4 class="header-form">Contact Us</h4>
+            <p>Admin akan menghubungi anda dalam jangka waktu 2x24 jam setelah form terkirim</p>
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Anda" required/><br>
+            <small class="error-message"></small><br />
+
+            <label for="email">Email Address</label>
+            <input type="text" name="email" id="email" required placeholder="Masukkan Email Anda" /><br>
+            <small class="error-message"></small><br />
+
+            <label for="interest">What are you interested in?</label>
+            <div class="select-wrapper">
+              <select id="interest">
+                <option value="">Select option</option>
+                <option value="web-development">Web Development</option>
+                <option value="mobile-apps">Mobile Apps</option>
+                <option value="ui-ux-design">UI/UX Design</option>
+              </select><br>
+              <small class="error-message"></small>
+            </div>
+
+            <button class="button-form">Send</button>
+          </form>
+        </div>
+
+        <h1 class="header-benefit">Benefit Dari Toko Mebel Kami</h1>
+        <div class="benefit">
+          <div class="benefit-item">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Pengiriman Cepat</h3>
+            <p>Pengiriman cepat dan aman ke seluruh wilayah.</p>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-headset"></i>
+            <h3>Customer Service 24/7</h3>
+            <p>Layanan pelanggan siap membantu kapan saja.</p>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <h3>Harga Terjangkau</h3>
+            <p>Harga bersaing dengan kualitas terbaik.</p>
+          </div>
+        </div>
+      </section>
+      <hr class="grs-tengah" />
+
+      <!-- Our Package Content -->
+      <section id="our-package">
+        <header>
+          <h1>Our Package</h1>
+        </header>
+
+        <!-- Our Package Content -->
+        <div class="container">
+          <div class="product-row">
+            <div class="product-item">
+              <div><i class="fa-solid fa-couch"></i></div>
+              <h3>Sofa Minimalis</h3>
+              <p>Desain modern, nyaman untuk bersantai bersama keluarga.</p>
+            </div>
+
+            <div class="product-item">
+              <div><i class="fa-solid fa-chair"></i></div>
+              <h3>Kursi Makan Set</h3>
+              <p>Terdiri dari 4 kursi dan 1 meja, cocok untuk ruang makan Anda.</p>
+            </div>
+
+            <div class="product-item">
+              <div><i class="fa-solid fa-bed"></i></div>
+              <h3>Tempat Tidur Kayu</h3>
+              <p>Rangka kayu solid, kuat dan tahan lama untuk tidur nyenyak.</p>
+            </div>
+          </div>
+          <hr class="separator" />
+
+          <div class="product-row">
+            <div class="product-item">
+              <div><i class="fa-solid fa-shirt"></i></div>
+              <h3>Lemari Pakaian</h3>
+              <p>Ruang penyimpanan luas untuk semua kebutuhan pakaian Anda.</p>
+            </div>
+
+            <div class="product-item">
+              <div><i class="fa-solid fa-table"></i></div>
+              <h3>Meja Kerja</h3>
+              <p>Desain ergonomis, ideal untuk bekerja atau belajar di rumah.</p>
+            </div>
+
+            <div class="product-item">
+              <div><i class="fa-solid fa-book"></i></div>
+              <h3>Rak Buku Dinding</h3>
+              <p>Solusi penyimpanan buku yang hemat tempat dan dekoratif.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="grs-bwh" />
+
+      <!-- Call Us Content -->
+      <section id="call-us">
+        <header>
+          <h1>Call Us</h1>
+        </header>
+
+        <!-- Call Us Content -->
+        <div class="sub-content">
+          <p>Temukan kenyamanan dan keindahan dalam setiap produk meubel kami. Untuk informasi lebih lanjut kami segera hubungi kami. Hubungi kami jika mempunyai kendala</p>
+          <button class="btn-call-us">Hubungi Kami</button>
+        </div>
+      </section>
+    </main>
+
+    <hr class="grs-bwh-call-us" />
+
+    <!-- Footer -->
+    <footer>
+      <span class="copyright"> &copy; 2025 Fauziadnan. All rights reserved. </span>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
