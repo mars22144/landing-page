@@ -5,3 +5,7 @@ landing page wtih HTML, CSS dan JavaScript, responsive layout
 1. copy link at code button(the green one)
 2. and then open your cmd and type
    ```git clone https://github.com/mars22144/landing-page-mebel-responsive-layout.git```
+3. and type this
+   ```cd landing-page```
+4. you have entered the file directory, then type this to open Visual Studio Code
+   ```code .```
